@@ -1,3 +1,6 @@
+# TODO List application 
+Display todo list, add new task(name,description), edit task,delete task
+React project , using Context API for state management
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
