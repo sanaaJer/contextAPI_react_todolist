@@ -33,6 +33,9 @@ const Reducer=(state,action)=>{
         
         case 'UPDATECOUNTID': 
                return {...state,idCount:action.payload};
+        
+         case 'DELETEALL': 
+               return { listTAsks: [], idCount: 1 };// delete all : set state to inital state
      
         default: return state;}
 };

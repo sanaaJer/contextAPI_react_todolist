@@ -9,14 +9,18 @@ function TasksList() {
     
     
     // Get list Tasks from context state 
-    const {state}=useContext(TasksContext);
+    const {state,dispatch}=useContext(TasksContext);
     const listTasks = state.listTAsks; 
 
+
+    // handle delete all tasks
+    const handleDeleteAll=()=>{ dispatch({type:'DELETEALL'})}
 
   return (
  // display list Tasks component section
   <section style={secListStyle}>
     <h1>To-Do List </h1>
+    <button onClick={handleDeleteAll}>Delete all </button>
     {
       // map functon to diisplay list of tasks usnig Component CardTask, send data of each single task as props 
       listTasks.map((e)=> (<CardTask {...e} />))

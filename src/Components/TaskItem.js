@@ -64,7 +64,7 @@ export default function CardTask({ id, title, description }) {
               value={editedDescription}
               onChange={(e) => setEditedDescription(e.target.value)}
               style={descripEditStyle}
-            />
+              required/>
           </div>
         ) : (
           // **View Mode (Card view Task)
