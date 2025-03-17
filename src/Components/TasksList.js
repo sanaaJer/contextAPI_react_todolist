@@ -16,7 +16,7 @@ function TasksList() {
   return (
  // display list Tasks component section
   <section style={secListStyle}>
-    <h1>TO DO LIST </h1>
+    <h1>To-Do List </h1>
     {
       // map functon to diisplay list of tasks usnig Component CardTask, send data of each single task as props 
       listTasks.map((e)=> (<CardTask {...e} />))

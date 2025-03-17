@@ -3,12 +3,17 @@ body {
   background:  linear-gradient(to right, #4C1F7A , #4C1F7A );
   font-family: "Nunito", sans-serif;
   font-size: 15px;
+  
+}
+h3{
+  color:#222831;
 }
 h1{
-  font-family: "Oxygen", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 900;
- 
+  font-size: 25px;
   padding-top: 5px;
+  
 
 }
 
@@ -49,7 +54,7 @@ input[type='submit']{
 
 input[type='submit']:hover{
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional: Add glow effect */
-
+  background-color: #1a9fe7;
 }
 input,textarea{
   border-radius: 6px;
@@ -78,3 +83,8 @@ textarea{
   color:#424547;
 }
 
+
+i:hover{
+  box-shadow: 0 0 6px #FC993C; /* Optional: Add glow effect */
+  color: #FC993C;
+}

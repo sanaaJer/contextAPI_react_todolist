@@ -38,7 +38,7 @@ export default function AddTask() {
 
   return (
     <section className="formsection">
-      <h1>ADD NEW TASK</h1>
+      <h1>Add New Task</h1>
       {/* form section element */}
       <form onSubmit={addTaskSubmit}>
          {/* Name title task input */}
