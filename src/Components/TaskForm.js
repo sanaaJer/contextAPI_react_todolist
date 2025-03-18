@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useContext } from 'react'
 import { TasksContext } from '../Context/TasksContext';
 
@@ -19,6 +19,13 @@ export default function AddTask() {
     id:idCount,
     completed:false
   });
+
+
+  // using ref : cursor (text entry point) to be inside an input name task field automatically after the app renders
+  const inputRef = useRef(null);
+  useEffect(() => {
+    inputRef.current.focus(); // Automatically focus input after render
+  }, []);
 
 
   // Handle submit Add task form
@@ -47,6 +54,7 @@ export default function AddTask() {
           value={newTask.title}
           name="title"
           type="text"
+          ref={inputRef}
           placeholder="Enter task name"
           onChange={(e) =>
             // update local newTask state 
