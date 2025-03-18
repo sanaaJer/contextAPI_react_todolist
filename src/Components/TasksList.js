@@ -5,7 +5,7 @@ import { TasksContext } from '../Context/TasksContext';
 
 function TasksList() {
    // inline-style
-   const secListStyle={ display: 'flex',flexDirection: 'column',width:'50%', padding:'0 1em 1em 1em', backgroundColor:primaryColor,color:'black',borderRadius:18,margin:'4em auto'}
+   const secListStyle={ display: 'flex',flexDirection: 'column',width:'50%', padding:'0 1em 2.8em 1em', backgroundColor:primaryColor,color:'black',borderRadius:18,margin:'4em auto',height:'fit-content',}
     
     
     // Get list Tasks from context state 
