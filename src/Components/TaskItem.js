@@ -10,7 +10,7 @@ export default function CardTask({ id, title, description }) {
   //inline-style variables
   const cardSectionStyle={ display: 'flex',  boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)', flexDirection: 'row', backgroundColor:'white', color: 'black', marginTop: '1em', borderRadius: '16px', padding: '10px'}
   const inputTitleStyleEdit={ width: '100%',fontSize: '1em',border: '1px solid #ccc',borderRadius: '4px',padding: '5px',height:'1em'}
-  const descriptionStyle={color:gray,margin: 0,fontSize: '11px',overflow: 'auto', maxHeight:' calc(1em * 2)',}
+  const descriptionStyle={color:gray,margin: 0,fontSize: '11px',overflow: 'hidden', textOverflow: "ellipsis", maxHeight:'26px'}
   const checkbStyle={ transform: "scale(1.3)", cursor: "pointer" };
   const descripEditStyle={width: '100%', height: '25px',fontSize: '12px',padding: '10px',borderRadius: '4px',   border: '1px solid #ccc', marginTop: '5px',color:gray}
   const taskDivstyle={ flex: 1 }

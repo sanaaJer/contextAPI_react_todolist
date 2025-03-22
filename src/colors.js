@@ -1,5 +1,5 @@
 
-export const primaryColor='#F0E3E3';
+export const primaryColor='#F2EFE7';
 export const secondrycolor='#4C1F7A';
 export const iconsColor='#FC993C' ; // orange
 export const buttonColor='#008DDA'; // blue 
